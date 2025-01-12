@@ -8,4 +8,4 @@ DATE=$(date +%Y-%m-%d)
 
 mkdir -p "$BACKUP_DIR/$DATE"
 
-cp -r "$SOURCE_DIR"/* "BACKUP_DIR/$DATE/"
+cp -r "$SOURCE_DIR" /* "BACKUP_DIR/$DATE/"
