@@ -1,0 +1,23 @@
+Special varibles in shell scripting.
+
+$0: Gives the filename of the current script.
+$n: Gives the nth filename (or other argument) on the command line.
+$#: Gives the number of argument passed to script or function.
+$@ or $*: Gives all the arguments passed into the function.
+$?: Exit status of the last command.
+$$: Gives the process ID of the current shell or the process ID under which they are executing.
+$!: Gives the process number of the last background command.
+
+
+trap:Used to catch special signal/interrupt/user in your script to prevent unpredictables.
+      It is aldo used to cleanup temporary files.
+
+-e: used to check  if file exist
+    if[-e "$file"]; then
+    echo "$file exists"
+    fi
+
+-d: used to check if directory exists
+    if[-d "$directory"]; then
+    echo "$directory exists"
+    fi
